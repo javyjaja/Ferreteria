@@ -1,0 +1,66 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+.catalogo li{
+	list-style:none;
+}
+.texto18{
+	font-size:18px;
+	
+}
+.texto22{
+	font-size:22px;
+	font-weight:700;
+}
+.catalogo .main{
+	min-height:60vh;
+	height:60vh;
+}
+
+.imgGrande
+{
+	width: 450px;
+	padding-top:30px;
+}
+.listCaracteristicas
+{
+	padding-top:40px;
+}
+.listCaracteristicas div
+{
+	margin-top:11px;
+}
+.listCaracteristicas .texto1
+{
+	font-size:18px;
+	font-weight:700;
+	
+}
+.listCaracteristicas .texto2
+{
+	font-size:18px;
+	font-weight:400;
+}
+.precio
+{
+	font-size:20px;
+	font-weight:700;
+	color:red;
+}
+.box
+{
+	height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #337ab7;
+    margin: 20px 10px;
+    padding: 9px;
+    box-shadow: 4px 4px 6px #337ab7;
+    float: left;
+	
+}
+.box:hover {
+    box-shadow: 6px 6px 10px #337ab7;
+    cursor: pointer;
+}
