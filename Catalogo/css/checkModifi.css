@@ -1,0 +1,20 @@
+ input[type=checkbox]{
+    display:none; 
+}
+input[type=checkbox] + label{
+    display:inline-block;
+    height:20px;
+    padding:0 0 0 25px;
+    margin:0 10px 0 0;
+      background-image:url(../img/check.png);
+    background-repeat:no-repeat;
+    background-position:0 0;
+}
+ 
+input[type=checkbox] + label{
+    background-position:0 -60px; /* Muda a posição do background só no checkbox */
+}
+ 
+input[type=checkbox]:checked + label {
+    background-position:0 -90px;
+}
