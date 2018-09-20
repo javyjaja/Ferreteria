@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ferreteria.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -24,6 +25,14 @@ namespace Ferreteria.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+        public ActionResult Login(loginModel o)
+        {
+            if (o.userName != null)
+            {
+                return View("Index");
+            }
             return View();
         }
     }
