@@ -14,8 +14,8 @@ body{
 	font-weight:700;
 }
 .catalogo .main{
-	min-height:60vh;
-	height:60vh;
+	/*min-height:60vh;
+	height:60vh;*/
 }
 
 .imgGrande
