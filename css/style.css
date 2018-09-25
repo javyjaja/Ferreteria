@@ -17,7 +17,9 @@
  *   version 1.0.0
  *
 */
-
+body{
+  background-color: #F1F7FD;
+}
 
 h1,
 h2,
@@ -8674,4 +8676,11 @@ iframe{
 	height:160vh;
 	padding-top:20px;
 	padding: 0 30px;
+}
+.direccion
+{
+  padding: 0px 60px;
+}
+.fotFace{
+  background-color: #AADDFF;
 }
