@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/checkModifi.css">
 	
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <title>Catalogo</title>
   </head>
@@ -24,7 +25,7 @@
                     <ul class="list-inline">
                         <li>
                             <a href="https://www.facebook.com/javyjaja">
-                                <i class="fab fa-facebook fa-3x"></i>
+                                <i class="fab fa-facebook-square fa-3x"></i>
                             </a>
                         </li>
                         <li>
@@ -45,7 +46,7 @@
                 </div>
             </div>
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-6 direccion">
 			
 				<h5>Direción ferreteria</h5>
 				<h5>Direción ferreteria Direción ferreteria</h5>
@@ -53,7 +54,7 @@
 				<img src="img/map.jpg" width="400px">
 			
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 direccion">
 				<h5>Direción servicio</h5>
 				<h5>Direción servicio Direción servicio</h5>
 				<h4>812-466-2024</h4>
@@ -61,7 +62,8 @@
 		</div>
 		<div class="col-md-3"></div>
 		<div class="form-area col-md-6">
-                            <form role="form">
+                            <section id="sendMsg">
+                            <form role="form" >
                                 <br style="clear:both">
                                 <div class="alert alert-success" style="display:none" id="email-success" role="alert">
                                     <span>Se ha enviado tu mensaje, en breve nos pondremos en contacto con usted.</span>
@@ -72,7 +74,7 @@
                                 <div class="alert alert-warning" style="display:none" id="email-alert" role="alert">
                                     <span>Debes llenar todos los campos.</span>
                                 </div>
-                                <h3 style="margin-bottom: 25px; text-align: center;">Mandar Mensaje</h3>
+                                <h3 onclick="subir();" style="margin-bottom: 25px; text-align: center;">Mandar Mensaje</h3>
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="txtName" name="name" placeholder="Nombre" required="">
                                 </div>
@@ -91,13 +93,20 @@
 
                                 <button type="button" onclick="sendMail();" id="submit" name="submit" class="btn btn-primary pull-right">Enviar</button>
                             </form>
-                            
+                            </section>
                         </div>
 	</div>
   
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/check.js"></script>
+    <script type="text/javascript">
+        function subir(){
+
+            $("#sendMsg").scrollTop(300);
+            
+        }
+    </script>
   </body>
 </html>
