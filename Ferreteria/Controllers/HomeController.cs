@@ -11,6 +11,10 @@ namespace Ferreteria.Controllers
     {
         public ActionResult Index()
         {
+            var db = new context();
+            var p = new producto { cantidad = 1, precio = 10, categoriaId = 1 };
+            db.products.Add(p);
+            db.SaveChanges();
             return View();
         }
 

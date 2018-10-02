@@ -9,9 +9,9 @@ namespace Ferreteria.Models
 {
     public class context: DbContext
     {
+        public context() : base("strConn") { }
         public DbSet<producto> products { get; set; }
-       
-
+     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
